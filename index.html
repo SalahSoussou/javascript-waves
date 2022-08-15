@@ -1,65 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <title>waves</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sin waves</title>
-</head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        overflow: hidden;
-    }
-
-    #fhader {
-        background-color: rgb(53, 112, 92);
-        display: flex;
-        position: fixed;
-        z-index: 10000;
-        width: 100%;
-        height: 10%;
-        padding: 0;
-    }
-
-    .innerDiv {
-        height: 20px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
-
-<body>
+  <body>
     <div id="fhader">
-        <div class="innerDiv">
-            <h2>position Y</h2>
-            <input type="range" name="y" id="y" min="0" max="1000">
-        </div>
-        <div class="innerDiv">
-            <h2>wave lenght</h2>
-            <input type="range" name="tl" id="tl" value="100" min="-100" max="100">
-        </div>
-        <div class="innerDiv">
-            <h2>wave fricqunse</h2>
-            <input type="range" name="frec" id="frec" value="20" min="-1" max="100">
-        </div>
-        <div class="innerDiv">
-            <h2>wave ampitude</h2>
-            <input type="range" name="ampli" id="ampli" value="100" min="-300" max="300">
-        </div>
-        <div class="innerDiv">
-            <h2>color</h2>
-            <input type="range" name="heu" id="heu" value="100" min="0" max="360">
-        </div>
+      <div class="innerDiv">
+        <h2>position Y</h2>
+        <input type="range" name="y" id="y" min="0" max="1000" />
+      </div>
+      <div class="innerDiv">
+        <h2>wave lenght</h2>
+        <input
+          type="range"
+          name="tl"
+          id="tl"
+          value="100"
+          min="-100"
+          max="100"
+        />
+      </div>
+      <div class="innerDiv">
+        <h2>wave fricqunse</h2>
+        <input
+          type="range"
+          name="frec"
+          id="frec"
+          value="20"
+          min="-1"
+          max="100"
+        />
+      </div>
+      <div class="innerDiv">
+        <h2>wave ampitude</h2>
+        <input
+          type="range"
+          name="ampli"
+          id="ampli"
+          value="100"
+          min="-300"
+          max="300"
+        />
+      </div>
+      <div class="innerDiv">
+        <h2>color</h2>
+        <input type="range" name="heu" id="heu" value="100" min="0" max="360" />
+      </div>
     </div>
     <canvas id="cnv"></canvas>
-    <script src="sin.js"></script>
-</body>
-
+    <script src="wave.js"></script>
+  </body>
 </html>
